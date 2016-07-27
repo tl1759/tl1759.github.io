@@ -5,7 +5,8 @@
     <title> Maps with Leaflet</title>
     <style>
     #mapid {
-     height: 280px;
+     height: 500px;
+     position: relative;
    }
    </style>
   </head>
@@ -18,7 +19,7 @@
    var mymap = L.map('mapid').setView([40.713004,-74.013144],9);
    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 13,
+    maxZoom: 18,
     id: 'liwentian.0padcikk',
     accessToken: 'pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjU0MWhtZjAxa3F0c2x3NDVuNnQ1MzEifQ.W9xrieWJlRyEQa1edyng-Q'
     }).addTo(mymap);
