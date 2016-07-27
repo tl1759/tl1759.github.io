@@ -9,7 +9,7 @@
   <body>
   <style>
     #mapid {
-     height: 500px;
+     height: 100%;
      position: relative;
    }
    </style>
@@ -53,9 +53,14 @@
     [40.710649, -74.009021],
     [40.708602, -74.008685],
     [40.713379, -74.015934],
-    [40.717789, -74.013862]
+    [40.717789, -74.013862],
     [40.713638, -74.005459]
-]).addTo(mymap);
+]
+{
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity:0.5
+}).addTo(mymap);
 
      var popup = L.popup();
     
