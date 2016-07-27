@@ -3,17 +3,20 @@
 
   <head>
     <title> Maps with Leaflet</title>
-    <style>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+  </head>
+  <body>
+  <style>
     #mapid {
      height: 500px;
      position: relative;
    }
    </style>
-  </head>
  
-    
+    <div id="mapid"></div>
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
-     <div id="mapid"></div>
+     
    
    <script>
    var mymap = L.map('mapid').setView([40.7,-74],9);
@@ -23,7 +26,19 @@
     id: 'liwentian.0padcikk',
     accessToken: 'pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjU0MWhtZjAxa3F0c2x3NDVuNnQ1MzEifQ.W9xrieWJlRyEQa1edyng-Q'
     }).addTo(mymap);
+
+   var popup = L.popup();
+    
+        function onMapClick(e) {
+                popup
+                        .setLatLng(e.latlng)
+                        .setContent("You clicked the map at " + e.latlng.toString())
+                        .openOn(map);
+        }
+
+        map.on('click', onMapClick);
+
    </script>
    
-
+</body>
 </html>
