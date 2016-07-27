@@ -44,6 +44,11 @@
 //   L.geoJson(geojsonFeature).addTo(mymap);
 
     var marker = L.marker([40.712988, -74.013122]).addTo(mymap);
+    var circle = L.circle([40.712988, -74.013122], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(mymap);
 
      var popup = L.popup();
     
