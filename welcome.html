@@ -4,13 +4,14 @@
 <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
   <head>
     <title> Maps with Leaflet</title>
-  
+    <style># mapid {
+     height: 180px
+   }
+   </style>
   </head>
   <body>
      <div id="mapid"></div>
-     #mapid {
-     height: 180px
-   }
+   
    <script>
    var mymap = L.map('mapid').setView([40.713004,-74.013144],13)
    </script>
