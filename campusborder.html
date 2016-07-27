@@ -1,3 +1,8 @@
+<script>
+
+</script>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -19,7 +24,7 @@
      
    
    <script>
-   var mymap = L.map('mapid').setView([40.713004,-74.013144],15);
+   var mymap = L.map('mapid').setView([40.691739, -74.177276],15);
    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
@@ -43,25 +48,37 @@
 // };
 //   L.geoJson(geojsonFeature).addTo(mymap);
     
-    var marker = L.marker([40.712988, -74.013122]).addTo(mymap);
+    var marker = L.marker([40.691739, -74.177276]).addTo(mymap);
     // var circle = L.circle([40.712988, -74.013122], 500, {
     // color: 'red',
     // fillColor: '#f03',
     // fillOpacity: 0.5
     //     }).addTo(mymap);
     marker.bindPopup("World Trade Center").openPopup();
-    var polygon = L.polygon([
-    [40.710649, -74.009021],
-    [40.708602, -74.008685],
-    [40.713379, -74.015934],
-    [40.717789, -74.013862],
-    [40.713638, -74.005459]],
+    var NewarkAirportpolygon = L.polygon([
+    [40.670911, -74.177893],
+    [40.676443, -74.190323],
+    [40.68126, -74.192039],
+    [40.690893, -74.19058],
+    [40.694016, -74.185688]
+    [40.704038, -74.182684],
+    [40.70638, -74.176676],
+    [40.708202, -74.170238],
+    [40.707876, -74.161484],
+    [40.707941, -74.15908],
+    [440.705274, -74.153072],
+    [40.696945, -74.157793],
+    [40.686532, -74.165518],
+    [40.673839, -74.17543]
+
+    ],
     {
       color: 'red',
-      fillColor: '#f03',
-      fillOpacity:0.5
+      fillColor: '#f04',
+      fillOpacity:0.8,
     }).addTo(mymap);
-    polygon.bindPopup(" World Trader Center Campus border").openPopup();
+
+    polygon.bindPopup("Newark Airport Campus Border").openPopup();
      var popup = L.popup();
     
         function onMapClick(e) {
@@ -73,7 +90,7 @@
 
         map.on('click', onMapClick);
    </script>
-   <a target="_blank" href="campusborder.html">
+   <a target="_blank" href="project.html">
     <p>Please check Newark Airport Campus Border Overlay</p>
   </a>
    
