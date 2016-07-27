@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" herf="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css"/>
-<script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+
   <head>
     <title> Maps with Leaflet</title>
     <style>
@@ -11,10 +10,12 @@
    </style>
   </head>
   <body>
+    <link rel="stylesheet" herf="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css"/>
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
      <div id="mapid"></div>
    
    <script>
-   var mymap = L.map('mapid').setView([40.713004,-74.013144],13)
+   var mymap = L.map('mapid').setView([40.713004,-74.013144],13);
    </script>
    
   </body>
