@@ -38,19 +38,21 @@
 
         map.on('click', onMapClick);
 
-    var geojsonFeature = {
-    "type": "Feature",
-    "properties": {
-        "name": "World Trade Center",
-        "amenity": "Visitor Center",
-        "popupContent": "This is the center of polygon!"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [40.712988, -74.013122]
-    }
-};
-  L.geoJson(geojsonFeature).addTo(mymap);
+//     var geojsonFeature = {
+//     "type": "Feature",
+//     "properties": {
+//         "name": "World Trade Center",
+//         "amenity": "Visitor Center",
+//         "popupContent": "This is the center of polygon!"
+//     },
+//     "geometry": {
+//         "type": "Point",
+//         "coordinates": [40.712988, -74.013122]
+//     }
+// };
+//   L.geoJson(geojsonFeature).addTo(mymap);
+
+    var marker = L.marker([40.712988, -74.013122]).addTo(mymap);
    </script>
    
 </body>
