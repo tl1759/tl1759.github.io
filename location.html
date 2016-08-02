@@ -37,6 +37,11 @@
                           + "<br>Comments:  "+feature.properties.description
                           + "<br> <a herf='liwentian.net'> more info </a>";
           layer.bindPopup(popupText);}
+
+          pointToLayer: function(feature，latlng){
+            return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.85});
+            },
+
         });
 
     dataLayer.addTo(map);
