@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> July Journey</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+  </head>
+  <body>
+  <style>
+    #mapid {
+     height: 600px;
+     position: relative;
+   }
+   </style>
+ 
+    <div id="mapid"></div>
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+     
+   
+   <script>
+   var mymap = L.map('mapid').setView([41.1290213,-76.783447],6);
+   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'liwentian.1123p9mm',
+    accessToken: 'pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjU0MWhtZjAxa3F0c2x3NDVuNnQ1MzEifQ.W9xrieWJlRyEQa1edyng-Q'
+    }).addTo(mymap);
+
+  
+
+//     var geojsonFeature = {
+//     "type": "Feature",
+//     "properties": {
+//         "name": "World Trade Center",
+//         "amenity": "Visitor Center",
+//         "popupContent": "This is the center of polygon!"
+//     },
+//     "geometry": {
+//         "type": "Point",
+//         "coordinates": [40.712988, -74.013122]
+//     }
+// };
+//   L.geoJson(geojsonFeature).addTo(mymap);
+    
+    // var marker = L.marker([40.712988, -74.013122]).addTo(mymap);
+    // // var circle = L.circle([40.712988, -74.013122], 500, {
+    // // color: 'red',
+    // // fillColor: '#f03',
+    // // fillOpacity: 0.5
+    // //     }).addTo(mymap);
+    // marker.bindPopup("World Trade Center").openPopup();
+    // var polygon = L.polygon([
+    // [40.710649, -74.009021],
+    // [40.708602, -74.008685],
+    // [40.713379, -74.015934],
+    // [40.717789, -74.013862],
+    // [40.713638, -74.005459]],
+    // {
+    //   color: 'red',
+    //   fillColor: '#f03',
+    //   fillOpacity:0.5
+    // }).addTo(mymap);
+    // polygon.bindPopup(" World Trader Center Campus border").openPopup();
+    //  var popup = L.popup();
+    
+    //     function onMapClick(e) {
+    //             popup
+    //                     .setLatLng(e.latlng)
+    //                     .setContent("You clicked the map at " + e.latlng.toString())
+    //                     .openOn(map);
+    //     }
+
+    //     map.on('click', onMapClick);
+   </script>
+   <a target="_blank" href="campusborder.html">
+    <p>Please check Newark Airport Campus Border Overlay</p>
+  </a>
+   
+</body>
+</html>
