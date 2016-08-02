@@ -34,8 +34,7 @@
     var dataLayer = L.geoJson(data,{
         onEachFeature: function(feature, layer) {
           var popupText = "City:  " + feature.properties.title
-                          + "<br>Comments:  "+feature.properties.description
-                          +"<br> <a herf = '"liwentian.net"'> More Info </a>" ;
+                          + "<br>Comments:  "+feature.properties.description;
           layer.bindPopup(popupText);}
         });
 
