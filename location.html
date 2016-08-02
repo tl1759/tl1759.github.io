@@ -31,7 +31,12 @@
     }).addTo(mymap);
 
    function addDataToMap(data,map){
-    var dataLayer = L.geoJson(data);
+    var dataLayer = L.geoJson(data,{
+        onEachFeature: function(feature, layer) {
+          var popupText = "City:" + feature.properties.title
+                          + "<br>Comments:"+feature.properties.description;
+          layer.bindPopup(popupText);}
+        });
     dataLayer.addTo(map);
    }
    $.getJSON('https://a.tiles.mapbox.com/v4/liwentian.1123p9mm/features.json?access_token=pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjUzengyZDAxa3B0c2x3OW15dTB3cHEifQ.Nu0r53wwcQIFsT4JBqgyJg',function(data){addDataToMap(data,mymap);});
