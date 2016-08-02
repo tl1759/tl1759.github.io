@@ -27,9 +27,11 @@
     accessToken: 'pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjU0MWhtZjAxa3F0c2x3NDVuNnQ1MzEifQ.W9xrieWJlRyEQa1edyng-Q'
     }).addTo(mymap);
 
-   L.geojsonFeature('julytip.geojson').addTo(map)
-  
-
+   function addDataToMap(data,map){
+    var dataLayer = L.geoJson(data);
+    dataLayer.addTo(map);
+   }
+   $.getJSON('julytrip.geojson');
 //     var geojsonFeature = {
 //     "type": "Feature",
 //     "properties": {
