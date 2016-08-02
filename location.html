@@ -36,6 +36,13 @@
           var popupText = "City:  " + feature.properties.title
                           + "<br>Comments:  "+feature.properties.description;
           layer.bindPopup(popupText);}
+
+        style: function(feature){
+          return {color: feature.properties.color
+        }
+        }
+
+
         });
     dataLayer.addTo(map);
    }
