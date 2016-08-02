@@ -31,7 +31,7 @@
     var dataLayer = L.geoJson(data);
     dataLayer.addTo(map);
    }
-   $.getJSON('julytrip.geojson');
+   $.getJSON('julytrip.geojson',function(data){addDataToMap(data,map);});
 //     var geojsonFeature = {
 //     "type": "Feature",
 //     "properties": {
