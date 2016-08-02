@@ -34,7 +34,7 @@
     var dataLayer = L.geoJson(data,{
         style: function(feature){
           return {color: feature.properties.color}
-        };
+        },
         onEachFeature: function(feature, layer) {
           var popupText = "City:  " + feature.properties.title
                           + "<br>Comments:  "+feature.properties.description;
