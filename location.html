@@ -23,7 +23,7 @@
    
    <script>
    var myIcon = L.icon({
-    iconUrl: 'marker.gif',
+    iconUrl: 'maker.gif',
     iconSize: [38,95]
    });
    var mymap = L.map('mapid').setView([41.1290213,-76.783447],6);
@@ -33,7 +33,7 @@
     id: 'liwentian.1123p9mm',
     accessToken: 'pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjU0MWhtZjAxa3F0c2x3NDVuNnQ1MzEifQ.W9xrieWJlRyEQa1edyng-Q'
     }).addTo(mymap);
-   L.maker([40.710678, -74.012934], {icon: myIcon}).addTo(map);
+ 
    function addDataToMap(data,map){
     var dataLayer = L.geoJson(data,{
         onEachFeature: function(feature, layer) {
@@ -47,6 +47,7 @@
         });
 
     dataLayer.addTo(map);
+    L.marker([40.710678, -74.012934], {icon: myIcon}).addTo(map);
    }
    $.getJSON('https://a.tiles.mapbox.com/v4/liwentian.1123p9mm/features.json?access_token=pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjUzengyZDAxa3B0c2x3OW15dTB3cHEifQ.Nu0r53wwcQIFsT4JBqgyJg',function(data){addDataToMap(data,mymap);});
 
