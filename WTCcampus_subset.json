@@ -1,0 +1,16 @@
+{"type":"FeatureCollection","features":
+	[{"type":"Feature",
+	"properties":
+			{"title":"WTC Campus -- Center Campus",
+			"description":"This is the center Campus of World Trade Center. "},
+	"geometry":{"coordinates":
+[[[-74.013669,40.713711],[-74.013969,40.71289],[-74.014452,40.71102],[-74.014645,40.710442],[-74.014731,40.709824],[-74.013851,40.709499],[-74.013047,40.709165],[-74.012832,40.709694],[-74.011952,40.709312],[-74.011673,40.709718],[-74.011223,40.710418],[-74.010772,40.711133],[-74.010483,40.711556],[-74.010128,40.712109],[-74.011663,40.712801],[-74.013669,40.713711]]],
+	"type":"Polygon"},
+	"style":{
+        //all SVG styles allowed
+        "fill":"red",
+        "stroke-width":"3",
+        "fill-opacity":0.6
+    },
+
+	"id":"4d5eb77cf9ae8ae6df3202f25ffed98c"}],"id":"liwentian.1195oeej"}
