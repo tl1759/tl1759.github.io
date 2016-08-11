@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-	<name>wtc_campus_larger.kml</name>
+	<name>wtc_campus_subset.kml</name>
 	<Placemark>
-		<name>World Trade Center Larger Campus</name>
-		<description>Larger Campus of World Trade Center.</description>
+		<name>World Trade CenterCampus</name>
+		<description> Campus of World Trade Center.</description>
 		<Style>
 			<LineStyle>
 				<color>641400B4</color>
-				<width>1.0</width>
+				<width>2.0</width>
 			</LineStyle>
 			<PolyStyle>
 				<color>3c1400B4</color>
