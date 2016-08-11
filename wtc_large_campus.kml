@@ -7,11 +7,11 @@
 		<description>Larger Campus of World Trade Center.</description>
 		<Style>
 			<LineStyle>
-				<color>3cf06414</color>
+				<color>64F06414</color>
 				<width>1.0</width>
 			</LineStyle>
 			<PolyStyle>
-				<color>32F06414</color>
+				<color>3cf06414</color>
 			</PolyStyle>
 		</Style>
 		<Polygon>
