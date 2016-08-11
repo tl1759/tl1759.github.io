@@ -24,6 +24,30 @@
 			</outerBoundaryIs>
 		</Polygon>
 	</Placemark>
+
+
+	<Placemark>
+		<name> South Pool</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64000000</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50000000</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.013331,40.712465 -74.013637,40.712042 -74.013634,40.712016 -74.013068,40.711778 -74.013036,40.711778 -74.012722,40.712207 -74.012733,40.712237 -74.013277,40.712469 -74.013331,40.712465
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
 	
 </Document>
 </kml>
