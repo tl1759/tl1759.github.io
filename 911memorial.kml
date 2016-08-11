@@ -27,7 +27,7 @@
 
 
 	<Placemark>
-		<name> South Pool</name>
+		<name> North Pool</name>
 		
 		<Style>
 			<LineStyle>
@@ -48,6 +48,31 @@
 			</outerBoundaryIs>
 		</Polygon>
 	</Placemark>
+
+	<Placemark>
+		<name>911 Memorial Museum</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64000000</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50000000</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.012797,40.711587 -74.012985,40.711623 -74.0131,40.711526 -74.012805,40.711386 -74.01247,40.711266 -74.012357,40.711575 -74.012797,40.711587
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+
 	
 </Document>
 </kml>
