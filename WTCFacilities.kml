@@ -7,11 +7,11 @@
 		
 		<Style>
 			<LineStyle>
-				<color>64B4783C</color>
+				<color>64006414</color>
 				<width>1.0</width>
 			</LineStyle>
 			<PolyStyle>
-				<color>50B4783C</color>
+				<color>4b006414</color>
 			</PolyStyle>
 		</Style>
 		<Polygon>
@@ -30,11 +30,11 @@
 		
 		<Style>
 			<LineStyle>
-				<color>64B4783C</color>
+				<color>64006414</color>
 				<width>1.0</width>
 			</LineStyle>
 			<PolyStyle>
-				<color>50B4783C</color>
+				<color>4b006414</color>
 			</PolyStyle>
 		</Style>
 		<Polygon>
@@ -42,6 +42,75 @@
 				<LinearRing>
 					<coordinates>
 					-74.011574,40.712514 -74.011773,40.712152 -74.011411,40.711981 -74.010711,40.711839 -74.01059,40.712075 -74.010568,40.712067 -74.010507,40.712136 -74.011166,40.712426 -74.011574,40.712514
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name> South Pool</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64000000</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50000000</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.013315,40.711255 -74.013386,40.711153 -74.013538,40.710942 -74.013535,40.710918 -74.012982,40.71068 -74.012934,40.710684 -74.012628,40.711109 -74.012626,40.711139 -74.013192,40.711367 -74.013234,40.711361 -74.013315,40.711255
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+
+	<Placemark>
+		<name> North Pool</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64000000</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50000000</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.013331,40.712465 -74.013637,40.712042 -74.013634,40.712016 -74.013068,40.711778 -74.013036,40.711778 -74.012722,40.712207 -74.012733,40.712237 -74.013277,40.712469 -74.013331,40.712465
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+	<Placemark>
+		<name>911 Memorial Museum</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64000000</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50000000</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.012797,40.711587 -74.012985,40.711623 -74.0131,40.711526 -74.012805,40.711386 -74.01247,40.711266 -74.012357,40.711575 -74.012797,40.711587
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>
