@@ -47,7 +47,55 @@
 			</outerBoundaryIs>
 		</Polygon>
 	</Placemark>
-	
+
+
+	<Placemark>
+		<name> Three World Trade Center</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64006414</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4b006414</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.012054,40.711412 -74.012229,40.710906 -74.011344,40.710542 -74.011107,40.710904 -74.011142,40.71092 -74.011078,40.711038 -74.012054,40.711412
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+	<Placemark>
+		<name> Four World Trade Center</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64006414</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>4b006414</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.012183,40.710645 -74.012239,40.710672 -74.012304,40.710706 -74.012494,40.710202 -74.011759,40.709895 -74.011448,40.710375 -74.012143,40.710682 -74.012183,40.710645
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+
 	<Placemark>
 		<name> South Pool</name>
 		
@@ -118,6 +166,51 @@
 		</Polygon>
 	</Placemark>
 
+	<Placemark>
+		<name>PATH Transit Hall</name>
+		
+		<Style>
+			<LineStyle>
+				<color>6414B4F0</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>5014B4F0</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.011816,40.711894 -74.011907,40.711845 -74.011952,40.711778 -74.011936,40.711699 -74.011848,40.711581 -74.011762,40.711507 -74.011684,40.711449 -74.011574,40.711375 -74.011362,40.71127 -74.011105,40.711196 -74.010989,40.711192 -74.010904,40.711241 -74.010871,40.711298 -74.010909,40.711392 -74.010989,40.711489 -74.011188,40.711654 -74.011344,40.711749 -74.01155,40.711841 -74.011692,40.711884 -74.011816,40.711894
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+
+	<Placemark>
+		<name>Vehicular Security Center</name>
+		
+		<Style>
+			<LineStyle>
+				<color>6414B4F0</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>5014B4F0</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.01435,40.71094 -74.01277,40.71017 -74.012776,40.710145 -74.012741,40.710123 -74.012867,40.709842 -74.012891,40.709846 -74.012899,40.709828 -74.013623,40.710042 -74.013613,40.710084 -74.013634,40.710127 -74.014436,40.710343 -74.014433,40.710365 -74.014578,40.710393 -74.01435,40.71094
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
 	
 </Document>
 </kml>
