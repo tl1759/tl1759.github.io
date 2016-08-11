@@ -210,7 +210,29 @@
 				</LinearRing>
 			</outerBoundaryIs>
 		</Polygon>
-	</Placemark>
-	
+	</Placemark
+
+	<Placemark>
+		<name>NTA</name>
+		
+		<Style>
+			<LineStyle>
+				<color>6414B4F0</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>5014B4F0</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.012344,40.712888 -74.012575,40.712577 -74.012593,40.712585 -74.012601,40.712496 -74.012296,40.712449 -74.012331,40.71237 -74.012247,40.712337 -74.012229,40.712337 -74.012191,40.71251 -74.01214,40.7125 -74.01207,40.712477 -74.011998,40.712467 -74.011974,40.712487 -74.011757,40.712402 -74.011657,40.712681 -74.011915,40.712731 -74.012044,40.71279 -74.012178,40.712851 -74.012188,40.712831 -74.012344,40.712888
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>	
 </Document>
 </kml>
