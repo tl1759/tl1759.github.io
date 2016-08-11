@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<name>WTC Facilities.kml</name>
+	<Placemark>
+		<name>One World Trade Center</name>
+		
+		<Style>
+			<LineStyle>
+				<color>64B4783C</color>
+				<width>1.0</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>50B4783C</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+					-74.013369,40.713368 -74.013682,40.712908 -74.013658,40.712864 -74.013082,40.71263 -74.013001,40.712642 -74.012695,40.713108 -74.012719,40.713154 -74.013296,40.713382 -74.013369,40.713368
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	
+</Document>
+</kml>
