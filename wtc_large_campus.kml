@@ -5,7 +5,7 @@
 	<Placemark>
 		<name>World Trade Center Larger Campus</name>
 		<description>Larger Campus of World Trade Center.</description>
-		<style>
+		<Style>
 			<LineStyle>
 				<color>141400FF</color>
 				<width>1.0</width>
@@ -13,7 +13,7 @@
 			<PolyStyle>
 				<color>191400e6</color>
 			</PolyStyle>
-		</style>
+		</Style>
 		<Polygon>
 			<outerBoundaryIs>
 				<LinearRing>
