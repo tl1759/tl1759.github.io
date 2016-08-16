@@ -2,9 +2,10 @@
 <html>
 
   <head>
-    <title> July Journey</title>
+    <title> Marine Traffic </title>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+    <script src="jquery-1.12.4.min.js"></script>
   </head>
   <body>
   <style>
@@ -54,11 +55,19 @@
     console.log(markerlist[0]);
     console.log(k);
     console.log(dataLayer);
-    for (i=0; i<k; i++){
-       L.marker(markerlist[i], {icon: myIcon}).addTo(map);
-    }
+    
    }
-   $.getJSON('https://a.tiles.mapbox.com/v4/liwentian.1123p9mm/features.json?access_token=pk.eyJ1IjoibGl3ZW50aWFuIiwiYSI6ImNpcjUzengyZDAxa3B0c2x3OW15dTB3cHEifQ.Nu0r53wwcQIFsT4JBqgyJg',function(data){addDataToMap(data,mymap);});
+   $.ajax(
+    { dataType: 'html',
+
+      url: 
+
+      'http://services.marinetraffic.com/api/exportvessels/26936354bb2759f0018afb8d688374be649b78dc/MINLAT:36.20882/MAXLAT:37.24562/MINLON:21.7749/MAXLON:23.13721/timespan:10/protocol:json',
+
+      username: 'pwc405@nyu.edu',
+      password: 'Global2016',
+
+ });
 
    </script>
    
