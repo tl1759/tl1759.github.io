@@ -1,98 +1,76 @@
 <!DOCTYPE html>
-<html>  <!-- head tag -->
-
-<head>
-	<title> Welcome</title>
-	<meta name = "Project" content = "I want it to work">
-	<style>
-	body{ height:100%;
-		width:100%;
-		background-image:url("Image/background1.gif");
-		background-repeat: no-repeat;
-		background-size: cover;
-
-	}
-	div.img {
-    margin: 45px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-    height: 180px;
-}
-
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: 100%;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-	
-	/*button{
-
-		font-size: 32px;
-		background-color: #008CBA;
-		color: green;
-		padding:15px 32px;
-		text-align: center;
-		display:inline-block;
-		border-radius: 12px;
-		margin: 30px;
-		float:left;
-		border:1px blue;
-
-	}
-	button:hover{
-		background-color: #4CAF50;
-	}*/
-	</style>
-</head>
+<html>
+<title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-	<div class="img">
-  <a target="_blank" href="object.html">
-    <img src="Image/object.gif" alt="object" width="300" height="200">
-  </a>
-  <div class="desc">OBJECTIVE</div>
+
+<div class="w3-sidebar w3-bar-block w3-black w3-card-2" style="width:130px">
+  <h5 class="w3-bar-item">Menu</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Work')">Work</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Education')">Education</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Project')">Project</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Interests')">Interests</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bottom')">Bottom</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Zoom')">Zoom</button>
 </div>
 
-<div class="img">
-  <a target="_blank" href="experience.html">
-    <img src="Image/experience.gif" alt="experience " width="300" height="200">
-  </a>
-  <div class="desc"> EXPERIENCE </div>
+<div style="margin-left:130px">
+  <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div>
+
+  <div id="Work" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Fade in</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitnts.</p>
+  </div>
+
+  <div id="Education" class="w3-container city w3-animate-left" style="display:none">
+    <h2>Slide in from left</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+
+  <div id="Project" class="w3-container city w3-animate-top" style="display:none">
+    <h2>Slide in from top</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+  </div>
+
+  <div id="Interesst" class="w3-container city w3-animate-right" style="display:none">
+    <h2>Slide in from right</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div id="Bottom" class="w3-container city w3-animate-bottom" style="display:none">
+    <h2>Slide in from bottom</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+
+  <div id="Zoom" class="w3-container city w3-animate-zoom" style="display:none">
+    <h2>Zoom in</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+  </div>
+
 </div>
 
-<div class="img">
-  <a target="_blank" href="project.html">
-    <img src="Image/projects.gif" alt="projects" width="300" height="200">
-  </a>
-  <div class="desc"> PROJECTS</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="internprojects.html">
-    <img src="Image/InterCEP.gif" alt="interests" width="300" height="200">
-  </a>
-  <div class="desc">Intern Work</div>
- <div class="img">
-  <a target="_blank" href="location.html">
-    <img src="Image/journey.gif" alt="Journey" width="300" height="200">
-  </a>
-  <div class="desc">July Journey</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="marinetraffic.html">
-    <img src="Image/InterCEP.gif" alt="interests" width="300" height="200">
-  </a>
-
+<script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
 
 </body>
 </html>
-
