@@ -32,7 +32,13 @@ h5 {
 	font-size: 16px;
 	color :#595959;
 }
-
+col1 { width:65%;
+	float:left;
+	}
+	
+col2 {	width: 35%;
+	float:right;
+	}
 </style>
 </head>
 <body>
@@ -92,10 +98,13 @@ h5 {
 
   <div id="Skills" class="w3-container city w3-animate-top" style="display:none">
     <h2>Skill</h2>
+	<div id ="col1">
     <h3><p>Programming Language</p></h3>
     	<h4>SQL, Python, Oracle, PostGRE SQL, HTML, CSS,Javascript, jQuery, PHP, VBA</h4>
     <h3><p>Software</p><h3>
     	<h4> ArcGIS, QGIS, Alteryx, Tableau,MS Office, SharePoint</h4>
+	    </div>
+	   <div id ="col2">
 	<div id="myCanvasContainer">
       <canvas width="300" height="300" id="myCanvas">
         <p>Anything in here will be replaced on browsers that support the canvas element</p>
@@ -110,7 +119,9 @@ h5 {
         <li><a href="/vinegar">Share Point</a></li>
       </ul>
     </div>
+</div>
   </div>
+		
 
   <div id="Interests" class="w3-container city w3-animate-right" style="display:none">
     <h2>Interests</h2>
