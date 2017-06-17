@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="tagcanvas.js" type="text/javascript"></script>
+   <script src="tagcanvas.min.js" type="text/javascript"></script>
+		
 <title>Welcome</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-
 h1 {
 	font-size: 28px;
 	color: black;
@@ -15,7 +15,6 @@ h1 {
 h2{
 	font-size: 24px;
 	color : #140607;
-
 }
 h3 {
 	font-size: 20px;
@@ -25,13 +24,28 @@ h4 {
 	font-size:16px;
 	color: #170217;}
 	{
-
 }
 h5 {
 	font-size: 16px;
 	color :#595959;
 }
-
+#col1 { width:75%;
+	float:left;
+	}
+	
+#col2 {	width: 25%;
+	float:right;
+	}
+#nyu{
+	color :#6c2c91;}
+#tju{
+	color :#0079c1;}
+#ng {
+	color:#0079c1;}
+#zbest{
+	color: #2fb62d;}
+#job{
+	color: #d31145;}
 </style>
 </head>
 <body>
@@ -52,33 +66,17 @@ h5 {
 
  <h2>Target</h2>
     <h3>
-    <p>I am currently looking for full position in Data Analytics Area. </p>
+    <p>I am currently looking for full position in Data Analytics Area.  </p>
+	    <p>GIS Analyst is also within my target!</p>
 	</h3>
-  <!-- <canvas id="tagcanvas" width="560" height="400" style="">
-<img src="http://www.goat1000.com/images/tagcanvas.png" width="200" height="150">
-<p>If this looks like a small static image, your browser does not support the
-canvas tag. Please try again using a different browser, or try to imagine text
-swirling around in response to the mouse position.</p>
-</canvas> -->
-   <!--  <h4>
-    <p> <li>  Design, program and support GIS Maping Report Portal to increase company report workflow effiency. </li><br>
-    	<li>  Collaborate with and advise various stakeholders to identify and prioritize data and/or business process and system changes and enhancements.</li><br>
-    	<li>  Process GIS data analysis and create reports to support gas operation for Down State New York.</li>
-    </p><br>
-	</h4> -->
-	<!-- <h2> Pervious Work<h2>
-		<h3><p>I used to be a Research Analyst at <a href ="http://www.intercep.nyu.edu/grn"> InterCEP, NYU</a> in the summer of 2016, and my achievements there were:</p></h3>
-		<h5>
-			<li> Created complaint maps analyzing service data used to improve operating performance.</li><br>
-			<li> Use various programming language scripts to collect, manage and analyze data.</li>
 
-		</h5> -->
+ 
   </div>
 
   <div id="Work" class="w3-container city w3-animate-opacity" style="display:none">
     <h2>Current Work</h2>
     <h3>
-    <p>I currently work at <a href = "https://www.nationalgridus.com/Long-Island-NY-Business/Default" >National Grid </a> as a GIS analyst. I start my work in August, 2016  and my responsibilities there are : </p>
+    <p>I currently work at <a href = "https://www.nationalgridus.com/Long-Island-NY-Business/Default" ><span id="ng"><b>National Grid</b> </span></a> as a <span id="job"><b>GIS Analyst</b></span>. I start my work in August, 2016  and my responsibilities there are : </p>
 	</h3>
     <h4>
     <p> <li>  Design, program and support GIS Maping Report Portal to increase company report workflow effiency. </li><br>
@@ -87,7 +85,7 @@ swirling around in response to the mouse position.</p>
     </p><br>
 	</h4>
 	<h2> Pervious Work<h2>
-		<h3><p>I used to be a Research Analyst at <a href ="http://www.intercep.nyu.edu/grn"> InterCEP, NYU</a> in the summer of 2016, and my achievements there were:</p></h3>
+		<h3><p>I used to be a <span id = "job"><b>Research Analyst</b></span> at <a href ="http://www.intercep.nyu.edu/grn"> <b>InterCEP, <span id = "nyu">NYU</span></a></b> in the summer of 2016, and my achievements there were:</p></h3>
 		<h5>
 			<li> Created complaint maps analyzing service data used to improve operating performance.</li><br>
 			<li> Use various programming language scripts to collect, manage and analyze data.</li>
@@ -96,10 +94,10 @@ swirling around in response to the mouse position.</p>
   </div>
 
   <div id="Education" class="w3-container city w3-animate-left" style="display:none">
-    <h2>New York University, New York City</h2>
+    <h2><span id = "nyu"><b>New York University</b></span>, New York City</h2>
     <h3><p>From August-2014 to August-2015, I studied Applied Urban Science and Informatics in <a href = "http://cusp.nyu.edu/">Center for Urban Science and Progress</a> , NYU</p> 
     	<p>In August 2015, I achieved my Master Degree from NYU.<p></h3>
-     <h2>Tongji University, Shanghai City</h2>
+     <h2><span id="tju"><b>Tongji University</b></span>, Shanghai City</h2>
     <h3><p>I started my undergraduate in September2009 in <a href= "http://www.tongji.edu.cn/english/"> Tongji University </a> and finished it successfully in July 2013.
     	<p> My major was Geographic Information System (GIS). </p>
     	</h3>
@@ -107,11 +105,30 @@ swirling around in response to the mouse position.</p>
 
   <div id="Skills" class="w3-container city w3-animate-top" style="display:none">
     <h2>Skill</h2>
+	<div id ="col1">
     <h3><p>Programming Language</p></h3>
     	<h4>SQL, Python, Oracle, PostGRE SQL, HTML, CSS,Javascript, jQuery, PHP, VBA</h4>
     <h3><p>Software</p><h3>
     	<h4> ArcGIS, QGIS, Alteryx, Tableau,MS Office, SharePoint</h4>
+	    </div>
+	   <div id ="col2">
+	<div id="myCanvasContainer">
+      <canvas width="300" height="300" id="myCanvas">
+        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+      </canvas>
+    </div>
+    <div id="tags">
+      <ul>
+        <li><a href="skill.html" target="_blank">Tableau</a></li>
+        <li><a href="skill.html">SQL</a></li>
+        <li><a href="skill.html">GIS</a></li>
+        <li><a href="skill.html">Alteryx</a></li>
+        <li><a href="skill.html">Share Point</a></li>
+      </ul>
+    </div>
+</div>
   </div>
+		
 
   <div id="Interests" class="w3-container city w3-animate-right" style="display:none">
     <h2>Interests</h2>
@@ -124,7 +141,6 @@ swirling around in response to the mouse position.</p>
     <p>Paris is the capital of France.</p> 
     <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
   </div>
-
   <div id="Zoom" class="w3-container city w3-animate-zoom" style="display:none">
     <h2>Zoom in</h2>
     <p>Tokyo is the capital of Japan.</p>
@@ -148,6 +164,21 @@ function openLink(evt, animName) {
   evt.currentTarget.className += " w3-red";
 }
 </script>
-
+<script type="text/javascript">
+      window.onload = function() {
+        try {
+          TagCanvas.Start('myCanvas','tags',{
+            textColour: '#ff0000',
+            outlineColour: '#ff00ff',
+            reverse: true,
+            depth: 0.8,
+            maxSpeed: 0.05
+          });
+        } catch(e) {
+          // something went wrong, hide the canvas container
+          document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+      };
+    </script>
 </body>
 </html>
